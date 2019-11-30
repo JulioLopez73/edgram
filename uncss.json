@@ -1,0 +1,11 @@
+{
+  "ignore": [
+  	".fa-youtube-play",
+  	".Youtube",
+  	".Youtube-wrapper",
+  	".Youtube iframe",
+  	".Youtube a",
+  	".App a"
+  ],
+  "ignoreSheets": []
+}

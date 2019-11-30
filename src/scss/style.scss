@@ -1,0 +1,20 @@
+// Vendors (Css exterior como iconos y fuentes de texto etc...)
+@import 'vendors/google-fonts';
+@import 'vendors/font-awesome';
+
+// Componentes y Css de configuración global
+@import 'components/variables';
+@import 'components/basic_reset';
+@import 'components/messages';
+@import 'components/upload_progress';
+
+
+// @import 'components/youtube_video';
+
+// Css para páginas
+@import 'pages/home';
+
+
+
+// Para componentes y selectores auxiliares
+@import 'components/utilities';

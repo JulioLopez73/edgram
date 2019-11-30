@@ -1,0 +1,79 @@
+/**
+*   @fileoverview
+*     Componente para aplicar un reseteo de estilos básicos al documento, aplica las siguientes reglas:
+*       * box-sizing: border-box; al documento HTML y todos sus elementos
+*       * padding y margin de todos los elementos a cero
+*       * Evita barras de desplazamiento horizontal al body del documento, múy útil para el Responsive Design
+*       * Asigna la fuente tipográfica y el tamaño base de fuente para el documento HTML
+*     Dependencias: Ninguna
+*
+*   @param {String} $font, nombre de la fuente base del proyecto
+*   @param {String} $font-size, tamaño de la fuente del elemento raíz (html)
+*
+*   @returns {void} no retorna nada
+*
+*   @author Jonathan MirCha <jonmircha@gmail.com>
+*   @version 1.0.0
+*/
+
+
+html {
+  box-sizing: border-box;
+  font: {
+    family: $font-main;
+    size: $font-size;
+  }
+  color: $font-color;
+  background: linear-gradient(-45deg,$second-color,$first-color,$second-color)no-repeat fixed;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body { overflow-x: hidden; }
+
+a {
+  display: block;
+  font-size: 4vw;
+  color: $font-color;
+  transition: all .3s ease-out;
+
+  &:hover{ color: $second-color; }
+}
+
+button {
+  border: 0;
+  font: {
+    size: 5vw;
+    family: $font-secondary;
+    weight: 700;
+  }
+  cursor: pointer;
+  color: $font-color;
+  background-color: transparent;
+  transition: all .3s ease-out;
+
+  @media screen and (min-width: 64em) {font-size: 2rem;}
+
+  &:focus {
+    border: 0;
+    outline: 0;
+  }
+
+  &:hover {transform: rotateY(180deg);}
+
+  & > * {display: block;}
+}
+
+
+img,video {
+  margin: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
