@@ -28,4 +28,9 @@
 
 .u-jc-flex-start { justify-content: flex-start; }
 
-
+.u-disable {
+  pointer-events: none;
+  & i {
+    color: $fourth-color;
+  }
+}

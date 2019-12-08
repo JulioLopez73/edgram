@@ -31,12 +31,12 @@ const uploader = () => {
               showProgress()
               progressStatus(data)
             }, err => {
-              c(err, err.code, err.message)
-              output.innerHTML = errorMsg(`${err.message}`, err)
+              // c(err, err.code, err.message)
+              output.innerHTML = errorMsg(`${err.mesagge}`, err)
             }, () => {
               storageRef.child(file.name).getDownloadURL()
                 .then(url => {
-                  c(url)
+                  // c(url)
                   output.insertAdjacentHTML('afterbegin', `${successMsg('Tu foto se a subido')}<img src="${url}">`)
                   savePhotoInDB(url, user)
                   hideProgress()
@@ -52,7 +52,7 @@ const uploader = () => {
     }
   },100)
   return `
-    <article class="Uploader Content-section u-show ">
+    <article class="Uploader Content-section u-hide ">
       <h2 class="u-title">Sube tus fotos</h2>
       <form id="upload" name="upload">
         <input type="file" id="uploader" multiple>
