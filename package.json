@@ -48,7 +48,7 @@
     "imagemin-jpeg-recompress": "^6.0.0",
     "imagemin-webp": "^5.1.0",
     "mkdirp": "^0.5.1",
-    "node-sass": "^4.13.0",
+    "node-sass": "^4.13.1",
     "node-sass-package-importer": "^5.3.2",
     "parallelshell": "^3.0.1",
     "postcss-cli": "^6.1.3",
